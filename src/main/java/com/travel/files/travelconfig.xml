@@ -9,7 +9,13 @@
             http://www.springframework.org/schema/context/spring-context.xsd">
           
                     
-<bean class="com.travel.model.User" id="user"></bean>
+<bean class="com.travel.model.User" id="user">
+
+<property name="Redbus" ref="flight"></property>
+
+</bean>
 <bean class="com.travel.model.Flight" id="flight"></bean>
+<bean class="com.travel.model.Bus" id="bus"></bean>
+<bean class="com.travel.model.Train" id="train"></bean>
 
 </beans>
